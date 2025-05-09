@@ -8,6 +8,22 @@
     <artifactId>CookingSystem</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <!-- select non-aggregate reports -->
+              <report>report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
@@ -67,4 +83,5 @@
 
 
     </dependencies>
+         
 </project>
